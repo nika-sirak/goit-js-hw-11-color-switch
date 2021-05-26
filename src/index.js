@@ -23,6 +23,6 @@ function onBtnStop() {
 function changeColors() {
   btnStart.setAttribute('disabled', '');
   intervalId = setInterval(() => {
-    document.body.style.backgroundColor = colors[randomIntegerFromInterval(0, 5)];
+    document.body.style.backgroundColor = colors[randomIntegerFromInterval(0, colors.length - 1)];
   }, 1000);
 }
